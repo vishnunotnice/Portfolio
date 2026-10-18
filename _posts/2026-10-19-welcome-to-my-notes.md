@@ -1,6 +1,6 @@
 ---
 title: Welcome to My Notes
-date: 2026-10-19
+date: 2026-10-18
 description: A place to document what I am learning while building in cybersecurity, networking, and cloud.
 tags:
   - learning
