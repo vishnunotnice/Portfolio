@@ -5,6 +5,7 @@ baseurl: ""
 permalink: /blog/:title/
 markdown: kramdown
 plugins: []
+future: true
 
 # Existing HTML pages remain static. Jekyll only renders Markdown posts.
 collections: {}
