@@ -1,0 +1,27 @@
+# Before logging in, replace the proxy URL below after deploying the Cloudflare Worker.
+# See docs/decap-cms-oauth.md. Do not put a GitHub client secret in this file.
+backend:
+  name: github
+  repo: vishnunotnice/Portfolio
+  branch: main
+  base_url: https://REPLACE-WITH-YOUR-WORKER.workers.dev
+  auth_endpoint: /auth
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "posts"
+    label: "Blog posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Description", name: "description", widget: "text", hint: "A short summary for the blog listing and search engines." }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Cover image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

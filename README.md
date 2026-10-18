@@ -1,9 +1,16 @@
 # Vishnu Moguluri — Portfolio
 
-A static 12-page website. No installation or build step is required.
+A static portfolio with a Jekyll-powered blog and Decap CMS editor.
 
 ## Open locally
-Open `index.html` in your browser. All internal links and assets use relative paths.
+Open `index.html` in your browser for the portfolio pages. The blog is rendered by Jekyll, so use `bundle exec jekyll serve` (or GitHub Pages) to preview `/blog/` and posts.
+
+## Blog and CMS
+
+- Public blog: `/blog/`; source posts live in `_posts/` and use Markdown front matter.
+- CMS editor: `/admin/`; it writes posts and uploaded media to this repository through GitHub.
+- Complete the OAuth setup in [`docs/decap-cms-oauth.md`](docs/decap-cms-oauth.md) before logging in. No OAuth secret belongs in the repo.
+- GitHub Pages must deploy from `main` and the repository root, with **GitHub Pages** enabled in Settings → Pages. Jekyll builds post pages automatically.
 
 ## Customize
 - Edit the text in each HTML file. All pages have their own content.
