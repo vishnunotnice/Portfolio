@@ -39,6 +39,7 @@ Upload this folder in Netlify's manual deploy interface, or connect the reposito
 - `/certifications/index.html`
 - `/skills/index.html`
 - `/projects/index.html`
+- `/projects/barlock/index.html`
 - `/projects/lablink/index.html`
 - `/projects/netscope/index.html`
 - `/projects/mcon/index.html`
